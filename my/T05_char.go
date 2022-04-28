@@ -25,4 +25,22 @@ func main() {
 	// 总结golang的自负对应的是用的是utf-8编码。Unicode是对应的字符集，utf-8是其中的一种编码方案而已
 	// 格式化打印可以打印出对应的字符
 	fmt.Printf("%c", c5)
+
+	var nb string = "我是中国人"
+	var sb string = "我是臺灣人"
+	if isLegal(nb) {
+		println(nb)
+	}
+	if isLegal(sb) {
+		println("我们都是小青蛙呀，呱呱呱呱呱~~")
+	}
+}
+
+func isLegal(s string) bool {
+	for i := 0; i < len(s); i++ {
+		if i >= '\u4E00' && i <= '\u9FA5' {
+			return false
+		}
+	}
+	return true
 }

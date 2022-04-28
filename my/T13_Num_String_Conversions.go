@@ -14,8 +14,8 @@ func main() {
 	var n3 bool = false
 	var s3 string = fmt.Sprintf("%t", n3)
 	fmt.Printf("s3的类型是： %T, s3 = %q\n", s3, s3)
-	//fmt.Sprintf("%b", n3)
-	//var n4 byte = 'c'
-	//fmt.Sprintf("%c", n4)
 
+	var n4 byte = 'c'
+	var s4 string = fmt.Sprintf("%c", n4)
+	fmt.Printf("s3的类型是： %T, s4 = %q\n", s4, s4)
 }
