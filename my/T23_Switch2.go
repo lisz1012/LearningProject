@@ -21,7 +21,7 @@ func main() {
 	case a > 10:
 		fmt.Println("A")
 	case a > 11:
-		fmt.Println("B") // 不会执行到
+		fmt.Println("B") // 不会执行到，go case会自动省略break
 	}
 
 	switch b := 12; { // ;不能省略
