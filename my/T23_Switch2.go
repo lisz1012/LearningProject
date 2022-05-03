@@ -27,7 +27,7 @@ func main() {
 	switch b := 12; { // ;不能省略，也感觉略怪异
 	case b > 6:
 		fmt.Println("b > 6")
-		fallthrough // 穿透一层
+		fallthrough // 只能穿透一层case！
 	case b > 0:
 		fmt.Println("b > 0") // 不会执行到，除非上面有fallthrough，且只会穿透一层
 	}
