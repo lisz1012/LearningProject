@@ -17,7 +17,7 @@ func main() {
 	//	fmt.Println("a")
 	//}
 	var a int8 = 12
-	switch { // 怪异!
+	switch { // 怪异!Q！
 	case a > 10:
 		fmt.Println("A")
 	case a > 11:
