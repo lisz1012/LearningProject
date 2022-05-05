@@ -24,7 +24,7 @@ func main() {
 		fmt.Println("B") // 不会执行到，go case会自动省略break。
 	}
 
-	switch b := 12; { // ;不能省略，也感觉略怪异！
+	switch b := 12; { // ;不能省略，也感觉略怪异！！
 	case b > 6:
 		fmt.Println("b > 6")
 		fallthrough // 只能穿透一层case！go特有的规定！
