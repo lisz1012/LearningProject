@@ -5,7 +5,7 @@ import "fmt"
 func main() {
 	var score int = 11
 	switch score / 10 {
-	case 9, 10:
+	case 9, 10: // 可以写两个，逗号隔开，自己研究出来的
 		fmt.Println("A") // 无需break
 	case 8:
 		fmt.Println("B")
