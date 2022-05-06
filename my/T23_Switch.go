@@ -16,6 +16,6 @@ func main() {
 	case 5, 4, 3, 2, 1, 0:
 		fmt.Println("F")
 	default:
-		fmt.Println("成绩非法") // 可以放在case前面
+		fmt.Println("成绩非法") // 可以放在case前面！
 	}
 }
