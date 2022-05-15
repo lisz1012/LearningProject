@@ -23,7 +23,7 @@ func main() {
 	fmt.Println(c5)
 
 	// 总结golang的自负对应的是用的是utf-8编码。Unicode是对应的字符集，utf-8是其中的一种编码方案而已
-	// 格式化打印可以打印出对应的字符
+	// 格式化打印可以打印出对应的字符.
 	fmt.Printf("%c", c5)
 
 	var nb string = "我是中国人"
